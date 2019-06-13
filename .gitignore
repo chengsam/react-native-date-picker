@@ -354,5 +354,12 @@ Temporary Items
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
+### Ignore demo and example
+demo
+docs
+example
+example-cocoapods
+githubREADME.md
+
 
 # End of https://www.gitignore.io/api/xcode,android,reactnative,androidstudio
