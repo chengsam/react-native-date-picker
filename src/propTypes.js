@@ -6,6 +6,7 @@ const androidProptypes = {
   androidVariant: PropTypes.oneOf(['iosClone', 'nativeAndroid']),
   dividerHeight: PropTypes.number,
   is24hourSource: PropTypes.oneOf(['locale', 'device']),
+  yearTextAlign: PropTypes.oneOf(['left', 'right']),
 }
 
 const DateType = PropTypes.instanceOf(Date)

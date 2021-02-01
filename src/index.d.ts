@@ -79,6 +79,8 @@ export interface DatePickerProps extends ViewProps {
    * "device" is default on android and "locale" on iOS. On iOS this cannot be changed.
    */
   is24hourSource?: 'locale' | 'device'
+
+  yearTextAlign?: 'left' | 'right'
 }
 
 export default class DatePicker extends Component<DatePickerProps> {}

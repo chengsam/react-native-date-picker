@@ -3,6 +3,7 @@ package com.henninghall.date_picker.wheels;
 import android.graphics.Paint;
 
 import com.henninghall.date_picker.LocaleUtils;
+import com.henninghall.date_picker.models.YearTextAlign;
 import com.henninghall.date_picker.pickers.Picker;
 import com.henninghall.date_picker.State;
 import com.henninghall.date_picker.models.Mode;
@@ -66,6 +67,9 @@ public class YearWheel extends Wheel
 
     @Override
     public Paint.Align getTextAlign() {
+        if (state.getYearTextAlign() == YearTextAlign.left) {
+            return Paint.Align.LEFT;
+        }
         return Paint.Align.RIGHT;
     }
 

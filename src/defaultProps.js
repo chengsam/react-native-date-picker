@@ -3,4 +3,5 @@ export default {
   minuteInterval: 1,
   androidVariant: 'iosClone',
   is24hourSource: 'device',
+  yearTextAlign: 'right',
 }

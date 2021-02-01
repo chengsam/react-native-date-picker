@@ -19,6 +19,7 @@ import com.henninghall.date_picker.props.MinuteIntervalProp;
 import com.henninghall.date_picker.props.ModeProp;
 import com.henninghall.date_picker.props.TextColorProp;
 import com.henninghall.date_picker.props.UtcProp;
+import com.henninghall.date_picker.props.YearTextAlignProp;
 
 import net.time4j.android.ApplicationStarter;
 
@@ -45,7 +46,7 @@ public class DatePickerManager extends SimpleViewManager<PickerView>  {
 
   @ReactPropGroup(names = { DateProp.name, ModeProp.name, LocaleProp.name, MaximumDateProp.name,
           MinimumDateProp.name, FadeToColorProp.name, TextColorProp.name, UtcProp.name, MinuteIntervalProp.name,
-          VariantProp.name, DividerHeightProp.name, Is24hourSourceProp.name
+          VariantProp.name, DividerHeightProp.name, Is24hourSourceProp.name, YearTextAlignProp.name
   })
   public void setProps(PickerView view, int index, Dynamic value) {
     updateProp("setProps", view, index, value);

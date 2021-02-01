@@ -4,6 +4,7 @@ import com.facebook.react.bridge.Dynamic;
 import com.henninghall.date_picker.models.Is24HourSource;
 import com.henninghall.date_picker.models.Mode;
 import com.henninghall.date_picker.models.Variant;
+import com.henninghall.date_picker.models.YearTextAlign;
 import com.henninghall.date_picker.props.DividerHeightProp;
 import com.henninghall.date_picker.props.Is24hourSourceProp;
 import com.henninghall.date_picker.props.VariantProp;
@@ -18,6 +19,7 @@ import com.henninghall.date_picker.props.ModeProp;
 import com.henninghall.date_picker.props.Prop;
 import com.henninghall.date_picker.props.TextColorProp;
 import com.henninghall.date_picker.props.UtcProp;
+import com.henninghall.date_picker.props.YearTextAlignProp;
 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -39,6 +41,7 @@ public class State {
     private final VariantProp variantProp = new VariantProp();
     private final DividerHeightProp dividerHeightProp = new DividerHeightProp();
     private final Is24hourSourceProp is24hourSourceProp = new Is24hourSourceProp();
+    private final YearTextAlignProp yearTextAlignProp = new YearTextAlignProp();
 
     private final HashMap props = new HashMap<String, Prop>() {{
         put(DateProp.name, dateProp);
@@ -54,6 +57,7 @@ public class State {
         put(VariantProp.name, variantProp);
         put(DividerHeightProp.name, dividerHeightProp);
         put(Is24hourSourceProp.name, is24hourSourceProp);
+        put(YearTextAlignProp.name, yearTextAlignProp);
     }};
     public DerivedData derived;
 
@@ -130,6 +134,10 @@ public class State {
 
     public Is24HourSource getIs24HourSource() {
         return is24hourSourceProp.getValue();
+    }
+
+    public YearTextAlign getYearTextAlign() {
+        return yearTextAlignProp.getValue();
     }
 
 }
